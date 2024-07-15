@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class CurrencyConverter {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese la cantidad en dólares: ");
+        double dollars = scanner.nextDouble();
+
+        // Utilizamos un factor de conversión simple
+        double euros = dollars * 0.85; // Tasa de cambio aproximada en el momento de la redacción
+
+        System.out.println(dollars + " dólares equivale a " + euros + " euros.");
+    }
+}
